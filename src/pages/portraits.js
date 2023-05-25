@@ -168,23 +168,23 @@ const Portraits = () => {
             overflow: 'hidden',
           }}
         >
-          <a
+          <span
             onClick={() => imgAction()}
             style={{ position: 'absolute', top: '10px', right: '10px' }}
           >
             <FontAwesomeIcon icon={faXmark} className="fs-1" />
-          </a>
-          <a onClick={() => imgAction('previous-img')}>
+          </span>
+          <span onClick={() => imgAction('previous-img')}>
             <FontAwesomeIcon icon={faCircleLeft} className="fs-1" />
-          </a>
+          </span>
           <img
             alt=""
             src={data.img}
             style={{ width: 'auto', maxWidth: '90%', maxHeight: '99%' }}
           />
-          <a onClick={() => imgAction('next-img')}>
+          <span onClick={() => imgAction('next-img')}>
             <FontAwesomeIcon icon={faCircleRight} className="fs-1" />
-          </a>
+          </span>
         </div>
       )}
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
