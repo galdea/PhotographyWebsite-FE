@@ -1,3 +1,10 @@
+import '../styles/gallery.css';
+import {
+  faCircleLeft,
+  faCircleRight,
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useEffect, useState } from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import img0 from '../img/photos/portraits/IMG-0.jpg';
@@ -161,19 +168,23 @@ const Portraits = () => {
             overflow: 'hidden',
           }}
         >
-          <button
+          <a
             onClick={() => imgAction()}
             style={{ position: 'absolute', top: '10px', right: '10px' }}
           >
-            X
-          </button>
-          <button onClick={() => imgAction('previous-img')}>Previous</button>
+            <FontAwesomeIcon icon={faXmark} className="fs-1" />
+          </a>
+          <a onClick={() => imgAction('previous-img')}>
+            <FontAwesomeIcon icon={faCircleLeft} className="fs-1" />
+          </a>
           <img
             alt=""
             src={data.img}
             style={{ width: 'auto', maxWidth: '90%', maxHeight: '99%' }}
           />
-          <button onClick={() => imgAction('next-img')}>Next</button>
+          <a onClick={() => imgAction('next-img')}>
+            <FontAwesomeIcon icon={faCircleRight} className="fs-1" />
+          </a>
         </div>
       )}
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>

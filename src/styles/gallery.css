@@ -21,3 +21,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
+
+.fs-1 {
+  color: #44484e;
+  padding: 20px;
+}
+
+.fs-1:hover {
+  color: #da8442;
+}
