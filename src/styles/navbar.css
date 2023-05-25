@@ -1,0 +1,46 @@
+.header {
+  background-color: #da8442;
+}
+
+.navbar-brand {
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+.navbar-brand:hover {
+  color: #343a40b4;
+}
+
+.links {
+  font-family: 'Courier New', Courier, monospace;
+  transform: skewY(-2deg);
+
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+}
+
+.links:hover {
+  border: 1px solid #343a40b4;
+  color: #343a40b4;
+}
+
+.fs-4:hover {
+  color: #343a40b4;
+}
+
+.contact {
+  font-family: 'Courier New', Courier, monospace;
+  transform: skewY(-2deg);
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: 1.5px solid white;
+  border-radius: 0.15rem;
+}
+
+.contact:hover {
+  border: 2px solid #343a40b4;
+  color: #343a40b4;
+}

@@ -1,0 +1,23 @@
+.title1 {
+  position: absolute;
+  top: 33%;
+  left: 47%;
+  transform: translate(-50%, -50%) skewY(-10deg); /* Adjust the skew angle as per your desired curvature */
+  color: #da8442;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.title2 {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%) skewY(-10deg);
+  color: #da8442;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
