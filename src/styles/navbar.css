@@ -5,7 +5,7 @@
 .navbar-brand {
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+  color: white;
 }
 
 .navbar-brand:hover {
@@ -26,7 +26,10 @@
   color: #343a40b4;
 }
 
-.fs-4:hover {
+.icon {
+  color: white;
+}
+.icon:hover {
   color: #343a40b4;
 }
 

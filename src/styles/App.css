@@ -1,0 +1,136 @@
+/* Small devices (up to 576px) */
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.6rem;
+  }
+  .hr {
+    font-size: 0.4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    margin: 5px;
+  }
+  .ml-auto {
+    margin: 2px;
+  }
+  .icon {
+    margin-right: 5px;
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    margin-left: 1px;
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Medium devices (576px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 0.6rem;
+  }
+  .hr {
+    font-size: 0.4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    margin: 5px;
+  }
+  .ml-auto {
+    margin: 2px;
+  }
+  .icon {
+    margin-right: 5px;
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    margin-left: 1px;
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .navbar-brand {
+    font-size: 0.8rem;
+  }
+  .hr {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 8px;
+  }
+  .ml-auto {
+    margin: 11px;
+  }
+  .icon {
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    margin-left: 5px;
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .hr {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 12px;
+  }
+
+  .icon {
+    margin-right: 15px;
+    font-size: 1.3rem;
+  }
+  .ml-auto {
+    margin-left: 100px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
