@@ -6,7 +6,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useEffect, useState } from 'react';
+import { Col, Row } from 'react-bootstrap';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import HorizontalNavbar from '../component/horizontalNavbar';
 import img0 from '../img/photos/portraits/IMG-0.jpg';
 import img11 from '../img/photos/portraits/IMG-11.jpg';
 import img20 from '../img/photos/portraits/IMG-20.jpg';
@@ -154,54 +156,51 @@ const Portraits = () => {
   }, [imgAction]);
 
   return (
-    <>
-      {data.img && (
-        <div
-          style={{
-            width: '100%',
-            height: '100vh',
-            background: 'black',
-            position: 'fixed',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            overflow: 'hidden',
-          }}
-        >
-          <span
-            onClick={() => imgAction()}
-            style={{ position: 'absolute', top: '10px', right: '10px' }}
+    <div>
+      <Row>
+        <Col md={2}>
+          <HorizontalNavbar />
+        </Col>
+        <Col md={10}>
+          {data.img && (
+            <div className="overlay-container">
+              <span
+                onClick={() => imgAction()}
+                style={{ position: 'absolute', top: '10px', right: '10px' }}
+              >
+                <FontAwesomeIcon icon={faXmark} className="fs-1" />
+              </span>
+              <span onClick={() => imgAction('previous-img')}>
+                <FontAwesomeIcon icon={faCircleLeft} className="fs-1" />
+              </span>
+              <img
+                alt=""
+                src={data.img}
+                style={{ width: 'auto', maxWidth: '90%', maxHeight: '99%' }}
+              />
+              <span onClick={() => imgAction('next-img')}>
+                <FontAwesomeIcon icon={faCircleRight} className="fs-1" />
+              </span>
+            </div>
+          )}
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
-            <FontAwesomeIcon icon={faXmark} className="fs-1" />
-          </span>
-          <span onClick={() => imgAction('previous-img')}>
-            <FontAwesomeIcon icon={faCircleLeft} className="fs-1" />
-          </span>
-          <img
-            alt=""
-            src={data.img}
-            style={{ width: 'auto', maxWidth: '90%', maxHeight: '99%' }}
-          />
-          <span onClick={() => imgAction('next-img')}>
-            <FontAwesomeIcon icon={faCircleRight} className="fs-1" />
-          </span>
-        </div>
-      )}
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
-        <Masonry gutter="10px">
-          {images.map((image, i) => (
-            <img
-              alt=""
-              key={i}
-              src={image.src}
-              style={{ width: '100%', display: 'block', cursor: 'pointer' }}
-              onClick={() => viewImage(image.src, i)}
-            />
-          ))}
-        </Masonry>
-      </ResponsiveMasonry>
-    </>
+            <Masonry gutter="10px">
+              {images.map((image, i) => (
+                <img
+                  alt=""
+                  key={i}
+                  src={image.src}
+                  style={{ width: '100%', display: 'block', cursor: 'pointer' }}
+                  onClick={() => viewImage(image.src, i)}
+                />
+              ))}
+            </Masonry>
+          </ResponsiveMasonry>
+        </Col>
+      </Row>
+    </div>
   );
 };
-
 export default Portraits;

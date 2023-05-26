@@ -5,6 +5,7 @@ import { Footer } from './component/footer';
 import Navbar from './component/navbar';
 import ScrollToTop from './component/scrollToTop';
 import Home from './pages/home';
+import Photos from './pages/photos';
 import Portraits from './pages/portraits';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route element={<Home />} path="/" />
-            <Route element={<Portraits />} path="/photos" />
+            <Route element={<Photos />} path="/photos" />
+            <Route element={<Portraits />} path="/portraits" />
           </Routes>
           <Footer />
         </ScrollToTop>
