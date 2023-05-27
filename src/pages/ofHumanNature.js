@@ -9,9 +9,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import HorizontalNavbar from '../component/horizontalNavbar';
-import { portraits } from '../data';
+import { ofHumanNature } from '../data';
 
-const Portraits = () => {
+const OfHumanNature = () => {
   const [data, setData] = useState({ img: '', i: 0 });
 
   const viewImage = (img, i) => {
@@ -22,16 +22,16 @@ const Portraits = () => {
     (action) => {
       let i = data.i;
       if (action === 'next-img') {
-        if (i < portraits.length - 1) {
+        if (i < ofHumanNature.length - 1) {
           setData((prevData) => ({
-            img: portraits[prevData.i + 1].src,
+            img: ofHumanNature[prevData.i + 1].src,
             i: prevData.i + 1,
           }));
         }
       } else if (action === 'previous-img') {
         if (i > 0) {
           setData((prevData) => ({
-            img: portraits[prevData.i - 1].src,
+            img: ofHumanNature[prevData.i - 1].src,
             i: prevData.i - 1,
           }));
         }
@@ -95,13 +95,13 @@ const Portraits = () => {
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
             <Masonry gutter="10px">
-              {portraits.map((image, i) => (
+              {ofHumanNature.map((ofHumanNature, i) => (
                 <img
                   alt=""
                   key={i}
-                  src={image.src}
+                  src={ofHumanNature.src}
                   style={{ width: '100%', display: 'block', cursor: 'pointer' }}
-                  onClick={() => viewImage(image.src, i)}
+                  onClick={() => viewImage(ofHumanNature.src, i)}
                 />
               ))}
             </Masonry>
@@ -111,4 +111,4 @@ const Portraits = () => {
     </div>
   );
 };
-export default Portraits;
+export default OfHumanNature;

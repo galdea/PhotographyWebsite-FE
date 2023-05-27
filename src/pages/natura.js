@@ -9,9 +9,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import HorizontalNavbar from '../component/horizontalNavbar';
-import { portraits } from '../data';
+import { natura } from '../data';
 
-const Portraits = () => {
+const Natura = () => {
   const [data, setData] = useState({ img: '', i: 0 });
 
   const viewImage = (img, i) => {
@@ -22,16 +22,16 @@ const Portraits = () => {
     (action) => {
       let i = data.i;
       if (action === 'next-img') {
-        if (i < portraits.length - 1) {
+        if (i < natura.length - 1) {
           setData((prevData) => ({
-            img: portraits[prevData.i + 1].src,
+            img: natura[prevData.i + 1].src,
             i: prevData.i + 1,
           }));
         }
       } else if (action === 'previous-img') {
         if (i > 0) {
           setData((prevData) => ({
-            img: portraits[prevData.i - 1].src,
+            img: natura[prevData.i - 1].src,
             i: prevData.i - 1,
           }));
         }
@@ -95,7 +95,7 @@ const Portraits = () => {
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
             <Masonry gutter="10px">
-              {portraits.map((image, i) => (
+              {natura.map((image, i) => (
                 <img
                   alt=""
                   key={i}
@@ -111,4 +111,4 @@ const Portraits = () => {
     </div>
   );
 };
-export default Portraits;
+export default Natura;

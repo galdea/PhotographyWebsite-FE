@@ -22,8 +22,11 @@ const HorizontalNavbar = () => {
           <a className="nav-link" href="/natura">
             Natura
           </a>
+          <a className="nav-link" href="/kids">
+            Kids
+          </a>
           <a className="nav-link" href="/animals">
-            Blogs
+            Animals
           </a>
         </nav>
       </Col>
