@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import HorizontalNavbar from '../component/horizontalNavbar';
+import AccessToHorizontalNavbar from '../component/accessToHorizontalNavbar.js';
 import { animals } from '../data';
 
 const Animals = () => {
@@ -67,7 +67,7 @@ const Animals = () => {
     <div>
       <Row>
         <Col md={2}>
-          <HorizontalNavbar />
+          <AccessToHorizontalNavbar />
         </Col>
         <Col md={10}>
           {data.img && (

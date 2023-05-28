@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import HorizontalNavbar from '../component/horizontalNavbar';
+import AccessToHorizontalNavbar from '../component/accessToHorizontalNavbar.js';
 import { portraits } from '../data';
 
 const Portraits = () => {
@@ -66,10 +66,10 @@ const Portraits = () => {
   return (
     <div>
       <Row>
-        <Col md={2}>
-          <HorizontalNavbar />
+        <Col md={1}>
+          <AccessToHorizontalNavbar />
         </Col>
-        <Col md={10}>
+        <Col md={11}>
           {data.img && (
             <div className="overlay-container">
               <span
