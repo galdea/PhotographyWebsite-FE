@@ -1,7 +1,50 @@
-.navbar {
-  transition: transform 0.3s ease;
+.horizontal-navbar {
+  transition: transform 1s ease;
+  margin-left: 10px;
 }
 
-.navbar-hidden {
-  transform: translateX(-100%);
+.navbar {
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+}
+
+.components-bar a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 20px;
+}
+
+.components-bar a:hover {
+  color: rgb(76, 74, 74);
+}
+
+.horizontal-menu {
+  background-color: #da8442;
+}
+
+.toggle-bar {
+  background-color: #da7325;
+  padding: 0px;
+  max-width: 5px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button {
+  background-color: #e46d12;
+  border: #e46d12;
+  max-width: 5px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a44f0e;
 }

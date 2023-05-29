@@ -1,8 +1,12 @@
+.text-center {
+  min-height: 100vh;
+}
+
 .title1 {
   position: absolute;
   top: 33%;
   left: 47%;
-  transform: translate(-50%, -50%) skewY(-10deg); /* Adjust the skew angle as per your desired curvature */
+  transform: translate(-50%, -50%) skewY(-10deg);
   color: #da8442;
   font-size: 3rem;
   font-weight: bold;
@@ -27,7 +31,7 @@
   top: 84%;
   left: 71%;
   transform: translate(-50%, -50%);
-  color: #060302;
+  color: black;
   font-style: italic;
   font-size: 1rem;
   font-family: Century school;
@@ -35,19 +39,25 @@
 
 .author {
   position: absolute;
-  top: 92%;
+  top: 142%;
   left: 80%;
   transform: translate(-50%, -50%);
-  color: #060302;
+  color: black;
   font-size: 0.8rem;
   font-family: Century school;
+  width: 100vw; /* Changed from 100dvh */
+  height: 100vh; /* Changed from 100dvh */
 }
 
-.animation-container {
-  position: absolute;
-  top: 42%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  color: white;
-  width: 10%;
+/* Media Queries */
+@media (max-width: 768px) {
+  .title1,
+  .title2 {
+    font-size: 2rem;
+  }
+
+  .quote,
+  .author {
+    font-size: 0.8rem;
+  }
 }

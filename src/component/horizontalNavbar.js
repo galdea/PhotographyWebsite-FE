@@ -3,7 +3,7 @@ import React from 'react';
 
 const HorizontalNavbar = () => {
   return (
-    <nav className="navbar-nav">
+    <nav className="navbar-nav horizontal-navbar">
       <a className="nav-link" href="/portraits">
         Portraits
       </a>
