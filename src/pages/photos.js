@@ -1,9 +1,8 @@
 import '../styles/horizontalNavbar.css';
-import { faAviato } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import HorizontalNavbar from '../component/horizontalNavbar.js';
+import Portraits from './portraits.js';
 
 const Photos = () => {
   const [expanded, setExpanded] = useState(false);
@@ -13,22 +12,16 @@ const Photos = () => {
 
   return (
     <Row>
-      <Col md={expanded ? 1 : 2} className="navbar">
-        <Row className="horizontal-menu">
-          <Col className="components-bar">
-            {!expanded && <HorizontalNavbar />}
-          </Col>
-          <Col className="toggle-bar">
-            <button onClick={handleToggle}></button>
-          </Col>
-        </Row>
+      <Col className="column">
+        <div className="horizontal-menu components-bar" md={expanded ? 1 : 2}>
+          {!expanded && <HorizontalNavbar />}
+        </div>
+      </Col>
+      <Col className="column2">
+        <button onClick={handleToggle} />
       </Col>
       <Col md={expanded ? 11 : 10}>
-        <Row>
-          <Col>
-            <div>Carousel</div>
-          </Col>
-        </Row>
+        <Portraits />
       </Col>
     </Row>
   );

@@ -1,18 +1,23 @@
-.horizontal-navbar {
-  transition: transform 1s ease;
-  margin-left: 10px;
-}
-
-.navbar {
-  padding-left: 0px;
-  margin-left: 0px;
-  padding-top: 0px;
-}
-
 .components-bar a {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.column {
+  padding-right: 0px;
+}
+
+.column2 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.column2-hidden {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 0px;
 }
 
 .components-bar a:hover {
@@ -21,28 +26,18 @@
 
 .horizontal-menu {
   background-color: #da8442;
-}
-
-.toggle-bar {
-  background-color: #da7325;
-  padding: 0px;
-  max-width: 5px;
+  width: 100%;
+  margin-right: 1px;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 button {
   background-color: #e46d12;
   border: #e46d12;
   max-width: 5px;
+  padding-right: 0px;
+  margin-right: 0px;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 button:hover {
