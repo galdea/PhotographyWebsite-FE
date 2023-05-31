@@ -9,7 +9,6 @@ import Home from './pages/home';
 import Kids from './pages/kids';
 import Natura from './pages/natura';
 import OfHumanNature from './pages/ofHumanNature';
-import Photos from './pages/photos';
 import Portraits from './pages/portraits';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route element={<Home />} path="/" />
-            <Route element={<Photos />} path="/photos" />
             <Route element={<Portraits />} path="/portraits" />
             <Route element={<OfHumanNature />} path="/ofhumannature" />
             <Route element={<Natura />} path="/natura" />

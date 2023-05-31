@@ -6,6 +6,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Navbar = () => {
   return (
@@ -18,12 +19,24 @@ const Navbar = () => {
             Photography
           </a>
           <div className="ml-auto">
-            <a
-              href="/photos"
-              className="nav-link hover:text-secondary links gallery"
-            >
-              Gallery
-            </a>
+            <Dropdown className="gallery links">
+              <Dropdown.Toggle
+                className="dropdown-toggle nav-link links"
+                id="navbarDropdown"
+              >
+                Gallery
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu">
+                <Dropdown.Item href="/portraits">Portraits</Dropdown.Item>
+                <Dropdown.Item href="/ofhumannature">
+                  Of Human Nature
+                </Dropdown.Item>
+                <Dropdown.Item href="/natura">Natura</Dropdown.Item>
+                <Dropdown.Item href="/kids">Kids</Dropdown.Item>
+                <Dropdown.Item href="/animals">Animals</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <a
               href="https://www.gabrielaldea.com"
               className="nav-link text-white hover:text-secondary links"

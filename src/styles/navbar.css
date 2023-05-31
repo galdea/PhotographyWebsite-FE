@@ -18,6 +18,7 @@
 
   color: white;
   display: inline-block;
+  padding: 0.2rem 0.5rem;
 }
 
 .links:hover {
@@ -45,4 +46,21 @@
 .contact:hover {
   border: 2px solid #343a40b4;
   color: #343a40b4;
+}
+
+.gallery {
+  background-color: #da8442;
+}
+
+.dropdown-menu {
+  margin-top: 8px;
+}
+
+#navbarDropdown {
+  background-color: #da8442;
+  border: white;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  margin-left: 0vh;
+  margin-right: 0vh;
 }
