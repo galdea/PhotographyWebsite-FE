@@ -1,8 +1,7 @@
-// IMPORT IMG FOR KIDS
+//IMPORT IMG FOR ANIMALS
 
 import img12 from './img/photos/animals/IMG-12.jpg';
 import img13 from './img/photos/animals/IMG-13.jpg';
-//IMPORT IMG FOR ANIMALS
 import img3 from './img/photos/animals/IMG-3.jpg';
 import img45 from './img/photos/animals/IMG-45.jpg';
 import img47 from './img/photos/animals/IMG-47.jpg';
@@ -15,6 +14,7 @@ import img67 from './img/photos/animals/IMG-67.jpg';
 import img68 from './img/photos/animals/IMG-68.jpg';
 import img79 from './img/photos/animals/IMG-79.jpg';
 import img84 from './img/photos/animals/IMG-84.jpg';
+// IMPORT IMG FOR KIDS
 import img10 from './img/photos/kids/IMG-10.jpg';
 import img14 from './img/photos/kids/IMG-14.jpg';
 import img15 from './img/photos/kids/IMG-15.jpg';
@@ -328,21 +328,6 @@ export const kids = [
 ];
 
 export const animals = [
-  { src: img4, width: 1600, height: 900 },
-  { src: img10, width: 1600, height: 900 },
-  { src: img14, width: 1600, height: 900 },
-  { src: img15, width: 1600, height: 900 },
-  { src: img16, width: 1600, height: 900 },
-  { src: img22, width: 1600, height: 900 },
-  { src: img23, width: 1600, height: 900 },
-  { src: img26, width: 1600, height: 900 },
-  { src: img27, width: 1600, height: 900 },
-  { src: img33, width: 1600, height: 900 },
-  { src: img49, width: 1600, height: 900 },
-  { src: img55, width: 1600, height: 900 },
-  { src: img58, width: 1600, height: 900 },
-  { src: img59, width: 1600, height: 900 },
-  { src: img75, width: 1600, height: 900 },
   { src: img3, width: 1600, height: 900 },
   { src: img6, width: 1600, height: 900 },
   { src: img12, width: 1600, height: 900 },

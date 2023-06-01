@@ -45,8 +45,22 @@
   color: black;
   font-size: 0.8rem;
   font-family: Century school;
-  width: 100vw; /* Changed from 100dvh */
-  height: 100vh; /* Changed from 100dvh */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Slide in */
+.home-container {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100vh;
+  transition: right 1s ease;
+}
+
+.slide-in {
+  right: 0;
 }
 
 /* Media Queries */

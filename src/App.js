@@ -13,22 +13,26 @@ import Portraits from './pages/portraits';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <ScrollToTop>
           <Navbar />
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<Portraits />} path="/portraits" />
-            <Route element={<OfHumanNature />} path="/ofhumannature" />
-            <Route element={<Natura />} path="/natura" />
-            <Route element={<Kids />} path="/kids" />
-            <Route element={<Animals />} path="/animals" />
-          </Routes>
+
+          <div className="ContentContainer">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/portraits" element={<Portraits />} />
+              <Route path="/ofhumannature" element={<OfHumanNature />} />
+              <Route path="/natura" element={<Natura />} />
+              <Route path="/kids" element={<Kids />} />
+              <Route path="/animals" element={<Animals />} />
+            </Routes>
+          </div>
+
           <Footer />
         </ScrollToTop>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
