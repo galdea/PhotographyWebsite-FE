@@ -5,6 +5,7 @@ import { Footer } from './component/footer';
 import Navbar from './component/navbar';
 import ScrollToTop from './component/scrollToTop';
 import Animals from './pages/animals';
+import ContactMe from './pages/contactMe';
 import Home from './pages/home';
 import Kids from './pages/kids';
 import Natura from './pages/natura';
@@ -26,6 +27,7 @@ function App() {
               <Route path="/natura" element={<Natura />} />
               <Route path="/kids" element={<Kids />} />
               <Route path="/animals" element={<Animals />} />
+              <Route path="/contactme" element={<ContactMe />} />
             </Routes>
           </div>
 

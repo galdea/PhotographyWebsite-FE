@@ -73,7 +73,7 @@ const Navbar = () => {
               >
                 <FontAwesomeIcon icon={faGithub} className="social-icon" />
               </a>
-              <a href="#contact" className="btn contact">
+              <a href="/contactme" className="btn contact">
                 Contact me
               </a>
             </div>
