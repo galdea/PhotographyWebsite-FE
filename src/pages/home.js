@@ -1,3 +1,4 @@
+import '../styles/home.css';
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import homeImage from '../img/photos/portraits/IMG-35.jpg';

@@ -1,0 +1,13 @@
+footer {
+  background-color: #da8442;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+a {
+  color: #343a40b4;
+}
+
+a:hover {
+  color: white;
+}

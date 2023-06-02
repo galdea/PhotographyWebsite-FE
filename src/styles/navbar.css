@@ -7,6 +7,10 @@
   font-family: 'Courier New', Courier, monospace;
   color: white;
 }
+.navbar-hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .navbar-brand:hover {
   color: #343a40b4;
@@ -23,7 +27,7 @@
 
 .links:hover {
   border: 1px solid #343a40b4;
-  color: #343a40b4;
+  color: white;
 }
 
 .icon {
@@ -45,7 +49,6 @@
 
 .contact:hover {
   border: 2px solid #343a40b4;
-  color: #343a40b4;
 }
 
 .gallery {
