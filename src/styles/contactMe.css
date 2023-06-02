@@ -1,10 +1,11 @@
 .contact-form {
-  max-width: 400px;
-  margin: auto;
+  max-width: 600px;
   padding: 20px;
+  margin-left: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f7f7f7;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .contact-form h2 {
@@ -24,5 +25,14 @@
 }
 
 .contact-form button {
-  width: 100%;
+  left: 50%;
+  width: 50%;
+  background-color: #da8442;
+  border: 1px solid white;
+}
+
+.contact-form button:hover {
+  background-color: #da8442;
+
+  border: 2px solid #343a40b4;
 }
