@@ -58,14 +58,6 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faInstagram} className="social-icon" />
               </a>
               <a
-                href="https://www.linkedin.com/in/gabriel-aldea/"
-                className="icon"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
-              </a>
-              <a
                 href="https://github.com/galdea"
                 className="icon"
                 rel="noopener noreferrer"
